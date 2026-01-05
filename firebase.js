@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 import { getDatabase, ref, push, onValue, transaction } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
 
-// Your Firebase configuration
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyD1EM4rP3PLm14v89Iq-y8QE9RqYWpJJNE",
   authDomain: "phillimon-community.firebaseapp.com",
