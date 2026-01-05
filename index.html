@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phillimon Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="usernameBox" class="center-box">
+  <h2>Enter Username</h2>
+  <input type="text" id="usernameInput" placeholder="Username">
+  <button onclick="saveUsername()">Continue</button>
+</div>
+
+<div id="app" class="hidden">
+  <h1>🟢 Phillimon Community</h1>
+
+  <div class="post-box">
+    <textarea id="postText" placeholder="Write something..."></textarea>
+
+    <div class="colors">
+      <button class="c green" onclick="setColor('green')"></button>
+      <button class="c blue" onclick="setColor('blue')"></button>
+      <button class="c purple" onclick="setColor('purple')"></button>
+      <button class="c red" onclick="setColor('red')"></button>
+      <button class="c black" onclick="setColor('black')"></button>
+    </div>
+
+    <button onclick="addPost()">Post</button>
+  </div>
+
+  <div id="posts"></div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
